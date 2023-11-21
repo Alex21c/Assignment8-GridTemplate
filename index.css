@@ -21,12 +21,13 @@ body{
 }
 main{
   display: grid;
-  width: 50rem;
+  width: 65rem;
   /* background-color: gray; */
-  grid-template: 1fr 1fr/ 1fr 1fr 1fr;
-  column-gap: 1rem;
-  row-gap: 1rem;
+  /* grid-template: 1fr 1fr/ 1fr 1fr 1fr; */
+  gap: 1.5rem;
   min-height: 38rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 div.review{
   padding: 1.5rem;
@@ -117,19 +118,22 @@ main> div:nth-child(4){
   background-color: #19212e;
   grid-column-start: 2;
   grid-column-end: 4;
-  
+}
+main> div:nth-child(5){
+  background-color: #ffffff;
+  color:black;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
-aside{
+
+/* aside{
   width: 18rem;
   padding: 0 1rem;
   height: inherit;
   position: relative;
   min-height: 38rem;
   /* background: lightblue; */
-}
-aside> div:nth-child(1){
-  background-color: #ffffff;
-  color:black;
-  min-height: inherit;
-}
+} */
